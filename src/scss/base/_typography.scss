@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: $color-grey-1;
+}
+
+.heading-primary {
+  font-size: 10rem;
+  animation: moveInLeft 0.4s;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
+
+  &--cursor {
+    animation: 1s cursorBlink step-end infinite;
+  }
+
+}
+
+.heading-secondary {
+  font-size: 8rem;
+}
+
+.heading-tertiary {
+  font-size: 6rem;
+}
+
+.heading-fourth {
+  font-size: 3rem;
+}
+
+.heading-fifth {
+  font-size: 2rem;
+  animation: moveInBottom 0.4s;
+}
+
+.paragraph-big {
+  font-size: 3rem;
+  column-count: 2;
+  column-gap: 10rem;
+}
+
+.paragraph-medium {
+
+}
+
+.paragraph-small {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
