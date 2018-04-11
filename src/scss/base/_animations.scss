@@ -73,3 +73,10 @@
     color: rgba($color-white, 0.85);
   }
 }
+
+@keyframes onair {
+  100% {
+    background-color: transparent;
+    transform: scale(1.3);
+  }
+}

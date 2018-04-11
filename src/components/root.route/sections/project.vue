@@ -25,6 +25,10 @@ export default {
   height: 100vh;
   position: relative;
 
+  @include respond(phone) {
+    padding: 5rem;
+  }
+
   .heading-primary {
     animation: moveInLeft 0.2s ease-in-out;
   }

@@ -14,6 +14,10 @@ body {
     animation: 1s cursorBlink step-end infinite;
   }
 
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+
 }
 
 .heading-secondary {
@@ -37,6 +41,13 @@ body {
   font-size: 3rem;
   column-count: 2;
   column-gap: 10rem;
+
+  @include respond(phone) {
+    font-size: 2rem;
+    column-count: 1;
+    column-gap: 0rem;
+  }
+
 }
 
 .paragraph-medium {
@@ -46,4 +57,9 @@ body {
 .paragraph-small {
   font-size: 1.6rem;
   font-weight: 300;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
+
 }

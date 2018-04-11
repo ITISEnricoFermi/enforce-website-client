@@ -14,10 +14,14 @@ export default {
 
 <style scoped lang="scss">
 .section-software {
-  background-image: linear-gradient(to left bottom, #071930, #023852);
+  background-image: linear-gradient(to left bottom, #071930, $color-blue-1);
   padding: 10rem;
   height: 100vh;
   position: relative;
+
+  @include respond(phone) {
+    padding: 5rem;
+  }
 
   .slider {
     background-color: rgba($color-white, 0.85);
