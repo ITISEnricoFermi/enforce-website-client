@@ -27,6 +27,11 @@ export default {
 
     }
   },
+  sockets: {
+    data (data) {
+      console.log(data)
+    }
+  },
   components: {
     appHeader: Header,
     appFooter: Footer,
