@@ -2,8 +2,8 @@
 <section class="section-live">
   <div class="content">
     <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1>
-    <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown> -->
-    <app-live></app-live>
+    <app-countdown :end="launch" v-if="countdown"></app-countdown>
+    <app-live v-else></app-live>
   </div>
 </section>
 </template>
