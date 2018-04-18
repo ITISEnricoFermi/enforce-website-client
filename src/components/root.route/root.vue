@@ -1,17 +1,18 @@
 <template>
-  <main>
-    <!-- <app-header></app-header> -->
+<main>
+  <!-- <full-page :options="options"> -->
+    <app-header></app-header>
     <!-- <app-section-team></app-section-team> -->
     <app-section-project></app-section-project>
     <app-section-targets></app-section-targets>
     <!-- <app-section-software></app-section-software> -->
     <app-section-live></app-section-live>
     <app-footer></app-footer>
-  </main>
+  <!-- </full-page> -->
+</main>
 </template>
 
 <script>
-
 import Header from './header'
 import Footer from './footer'
 import SectionTeam from './sections/team'
@@ -20,16 +21,17 @@ import SectionTargets from './sections/targets'
 import SectionSoftware from './sections/software'
 import SectionLive from './sections/live'
 
+// import {
+//   FullPage
+// } from 'FullPage'
+
 export default {
   name: 'root',
   data: () => {
     return {
-
-    }
-  },
-  sockets: {
-    data (data) {
-      console.log(data)
+      options: {
+        paddingTop: '30px'
+      }
     }
   },
   components: {
@@ -40,6 +42,7 @@ export default {
     appSectionTargets: SectionTargets,
     appSectionSoftware: SectionSoftware,
     appSectionLive: SectionLive
+    // appFullPage: FullPage
   }
 }
 </script>

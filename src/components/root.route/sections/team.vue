@@ -23,6 +23,10 @@ export default {
   height: 100vh;
   position: relative;
 
+  @include respond(tab-lan) {
+    height: auto;
+  }
+
   .content {
     height: 100%;
     position: relative;

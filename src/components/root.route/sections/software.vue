@@ -19,8 +19,9 @@ export default {
   height: 100vh;
   position: relative;
 
-  @include respond(phone) {
+  @include respond(tab-lan) {
     padding: 5rem;
+    height: auto;
   }
 
   .slider {

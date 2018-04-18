@@ -35,8 +35,9 @@ export default {
   background-color: $color-white-light-1;
   padding: 10rem;
   position: relative;
+  min-height: 100vh;
 
-  @include respond(phone) {
+  @include respond(tab-lan) {
     padding: 5rem;
   }
 

@@ -22,6 +22,8 @@ body {
 
 .heading-secondary {
   font-size: 8rem;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
 }
 
 .heading-tertiary {
