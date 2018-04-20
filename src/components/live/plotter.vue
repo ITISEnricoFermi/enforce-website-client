@@ -39,9 +39,9 @@ export default {
       },
       tooltip: true,
       // timestampFormatter: SmoothieChart.timeFormatter,
-      responsive: true,
-      maxValue: this.max,
-      minValue: this.min
+      responsive: true
+      // maxValue: this.max,
+      // minValue: this.min
     })
 
     chart.addTimeSeries(this.timeSerie, {

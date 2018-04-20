@@ -48,4 +48,13 @@ export default {
 </script>
 
 <style lang="scss">
+.smoothie-chart-tooltip {
+    background: #444;
+    padding: 1em;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 10px;
+    pointer-events: none;
+}
 </style>

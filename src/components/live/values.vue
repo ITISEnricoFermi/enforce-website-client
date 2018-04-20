@@ -37,19 +37,19 @@ export default {
     }
   },
   sockets: {
-    temperature(temp) {
+    temperature (temp) {
       this.data.temperature = Number(temp).toFixed(2)
     },
-    humidity(humi) {
+    humidity (humi) {
       this.data.humidity = Number(humi).toFixed(2)
     },
-    pressure(press) {
+    pressure (press) {
       this.data.pressure = Number(press).toFixed(2)
     },
-    orientation(ori) {
+    orientation (ori) {
       this.data.orientation = ori
     },
-    position(pos) {
+    position (pos) {
       this.data.position = pos
     }
   }
