@@ -9,7 +9,7 @@
       <app-plotter :data="'humidity'" :color="yellow" :max="'100'" :min="'0'"></app-plotter>
     </div>
     <div class="plotters__pressure">
-      <app-plotter :data="'pressure'" :color="blue" :max="'1500'" :min="'-500'"></app-plotter>
+      <app-plotter :data="'pressure'" :color="blue" :max="'1500'" :min="'500'"></app-plotter>
     </div>
   </div>
 </div>
@@ -26,10 +26,10 @@ import Plotter from './plotter.vue'
 export default {
   data: () => {
     return {
-      red: '#FF4447',
-      green: '#00FF00',
-      blue: '#3897f0',
-      yellow: '#F3A32A'
+      red: '255, 68, 71',
+      green: '0, 255, 0',
+      blue: '56, 151, 240',
+      yellow: '243, 163, 42'
     }
   },
   sockets: {
