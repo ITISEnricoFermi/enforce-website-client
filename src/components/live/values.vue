@@ -12,7 +12,7 @@
   </transition>
   <transition name="fade">
     <p class="value">
-      <span class="number">{{ data.pressure + 'Pa' }}</span>
+      <span class="number">{{ data.pressure + 'hPa' }}</span>
       <span class="tag tag--pressure">Pressione</span></p>
   </transition>
   <transition name="fade">
