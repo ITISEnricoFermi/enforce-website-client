@@ -1,6 +1,6 @@
 <template>
 <div class="plotter">
-  <canvas id="chart"></canvas>
+  <canvas :id="'chart' + data"></canvas>
 </div>
 </template>
 
@@ -10,49 +10,53 @@ import {
   TimeSeries
 } from 'smoothie'
 
+import {
+  eventBus
+} from '@/main'
+
 export default {
   name: 'plotter',
+  props: ['data', 'color', 'max', 'min'],
+  data: () => {
+    return {
+      timeSerie: new TimeSeries()
+    }
+  },
   mounted () {
-    // Create a time series
-    let series = new TimeSeries()
-
     // Find the canvas
-    let canvas = document.getElementById('chart')
+    let canvas = document.getElementById('chart' + this.data)
     canvas.width = (canvas.parentNode.parentNode.offsetWidth * 2) + 'px'
     canvas.height = (canvas.parentNode.offsetHeight * 2) + 'px'
 
     // Create the chart
     let chart = new SmoothieChart({
-      responsive: true
+      millisPerPixel: 40,
+      labels: {
+        fontSize: 25
+      },
+      grid: {
+        borderVisible: false
+      },
+      tooltip: true,
+      // timestampFormatter: SmoothieChart.timeFormatter,
+      responsive: true,
+      maxValue: this.max,
+      minValue: this.min
     })
-    chart.addTimeSeries(series, {
-      strokeStyle: 'rgba(0, 255, 0, 1)',
-      fillStyle: 'rgba(0, 255, 0, 0.2)',
+
+    chart.addTimeSeries(this.timeSerie, {
+      strokeStyle: `rgba(${this.color}, 1)`,
+      fillStyle: `rgba(${this.color}, 0.2)`,
       lineWidth: 4
     })
     chart.streamTo(canvas, 500)
 
-    // Randomly add a data point every 500ms
-    setInterval(function () {
-      series.append(Date.now(), Math.random() * 10000)
-    }, 500)
+    let self = this
+
+    eventBus.$on(`${this.data}`, (data) => {
+      self.timeSerie.append(Date.now(), data)
+    })
   }
-  // ready () {
-  //   window.addEventListener('resize', () => {
-  //     let canvas = document.getElementById('chart')
-  //
-  //     canvas.style.width = canvas.parentNode.offsetWidth + 'px'
-  //     canvas.style.height = canvas.parentNode.offsetHeight + 'px'
-  //   })
-  // },
-  // beforeDestroy () {
-  //   window.removeEventListener('resize', () => {
-  //     let canvas = document.getElementById('chart')
-  //
-  //     canvas.style.width = canvas.parentNode.offsetWidth + 'px'
-  //     canvas.style.height = canvas.parentNode.offsetHeight + 'px'
-  //   })
-  // }
 }
 </script>
 

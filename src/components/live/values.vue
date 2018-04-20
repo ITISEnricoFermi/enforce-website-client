@@ -36,31 +36,21 @@ export default {
       }
     }
   },
-  created () {
-    setInterval(() => {
-      this.data.temperature = Math.floor(Math.random() * 1000)
-      this.data.humidity = Math.floor(Math.random() * 1000)
-      this.data.pressure = Math.floor(Math.random() * 1000)
-      this.data.altitude = Math.floor(Math.random() * 1000)
-    }, 1000)
-  },
   sockets: {
-    data (data) {
-      if (data.temperature) {
-        this.data.temperature = data.temperature
-      }
-
-      if (data.humidity) {
-        this.data.humidity = data.humidity
-      }
-
-      if (data.pressure) {
-        this.data.pressure = data.pressure
-      }
-
-      if (data.altitude) {
-        this.data.altitude = data.altitude
-      }
+    temperature (temp) {
+      this.data.temperature = temp
+    },
+    humidity (humi) {
+      this.data.humidity = humi
+    },
+    pressure (press) {
+      this.data.pressure = press
+    },
+    orientation (ori) {
+      this.data.orientation = ori
+    },
+    position (pos) {
+      this.data.position = pos
     }
   }
 }

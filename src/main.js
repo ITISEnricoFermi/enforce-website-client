@@ -11,8 +11,20 @@ export const SocketInstance = socketio('http://localhost:4000')
 
 export const eventBus = new Vue({
   methods: {
-    event (element) {
-      this.$emit('event', element)
+    temperature (temp) {
+      this.$emit('temperature', temp)
+    },
+    humidity (humi) {
+      this.$emit('humidity', humi)
+    },
+    pressure (press) {
+      this.$emit('pressure', press)
+    },
+    orientation (ori) {
+      this.$emit('orientation', ori)
+    },
+    position (pos) {
+      this.$emit('position', pos)
     }
   }
 })

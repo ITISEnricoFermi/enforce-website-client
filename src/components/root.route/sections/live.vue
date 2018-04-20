@@ -2,8 +2,9 @@
 <section class="section-live">
   <div class="content">
     <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1>
-    <app-countdown :end="launch" v-if="countdown"></app-countdown>
-    <app-live v-else></app-live>
+    <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown>
+    <app-live v-else></app-live> -->
+    <app-live></app-live>
   </div>
 </section>
 </template>
@@ -21,10 +22,10 @@ export default {
     }
   },
   created () {
-    if (String(Date.now()) !== String(this.launch)) {
-      this.countdown = true
-    } else {
+    if (String(Date.now()) >= String(this.launch)) {
       this.countdown = false
+    } else {
+      this.countdown = true
     }
   },
   components: {
