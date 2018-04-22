@@ -12,6 +12,9 @@
       <app-plotter :data="'pressure'" :color="blue" :max="'1500'" :min="'500'"></app-plotter>
     </div>
   </div>
+  <div class="models">
+    <app-model></app-model>
+  </div>
 </div>
 </template>
 
@@ -22,6 +25,7 @@ import {
 
 import Values from './values.vue'
 import Plotter from './plotter.vue'
+import Model from '@/components/model/model'
 
 export default {
   data: () => {
@@ -56,7 +60,8 @@ export default {
   },
   components: {
     appValues: Values,
-    appPlotter: Plotter
+    appPlotter: Plotter,
+    appModel: Model
   }
 }
 </script>
@@ -95,5 +100,9 @@ export default {
           grid-area: pressure;
         }
     }
+}
+
+.models {
+  margin-top: 3vh;
 }
 </style>
