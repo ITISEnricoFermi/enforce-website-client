@@ -24,6 +24,10 @@ export default {
   margin: 0 auto;
   overflow: hidden;
 
+  div:first-child {
+    height: 100%;
+  }
+
   &__text-box {
     position: absolute;
     @include absCenter;

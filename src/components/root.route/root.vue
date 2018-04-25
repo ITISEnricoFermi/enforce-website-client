@@ -6,7 +6,8 @@
     <app-section-project></app-section-project>
     <app-section-targets></app-section-targets>
     <!-- <app-section-software></app-section-software> -->
-    <app-section-live></app-section-live>
+    <!-- <app-section-live></app-section-live> -->
+    <app-section-video></app-section-video>
     <app-footer></app-footer>
   <!-- </full-page> -->
 </main>
@@ -20,6 +21,7 @@ import SectionProject from './sections/project'
 import SectionTargets from './sections/targets'
 import SectionSoftware from './sections/software'
 import SectionLive from './sections/live'
+import SectionVideo from './sections/video'
 
 // import {
 //   FullPage
@@ -41,7 +43,8 @@ export default {
     appSectionProject: SectionProject,
     appSectionTargets: SectionTargets,
     appSectionSoftware: SectionSoftware,
-    appSectionLive: SectionLive
+    appSectionLive: SectionLive,
+    appSectionVideo: SectionVideo
     // appFullPage: FullPage
   }
 }
