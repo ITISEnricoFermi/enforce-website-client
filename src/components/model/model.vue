@@ -16,7 +16,6 @@ import * as THREE from 'three'
 export default {
   mounted () {
     const model = new ModelViewer(THREE, 'model')
-    console.log(model)
 
     window.addEventListener('resize', () => {
       model.updateSize()

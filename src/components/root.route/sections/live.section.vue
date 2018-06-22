@@ -1,10 +1,17 @@
 <template>
 <section class="section-live">
   <div class="content">
-    <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1>
+    <!-- <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1> -->
     <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown>
     <app-live v-else></app-live> -->
-    <app-live></app-live>
+    <h2 class="heading-tertiary">Segui la diretta</h2>
+    <p class="description">Durante i lanci il CanSat effettua alcune misurazioni: temperatura, umidità, pressione, ecc.
+      <br/>I dati vengono inviati in tempo reale al nostro sito web e resi facilmente consultabili
+      grazie a grafici e rappresentazioni tridimensionali.</p>
+    <a href="/live/" class="button">
+      <span>Segui la diretta</span>
+      <span class="icon"><i class="fas fa-arrow-right"></i></span>
+    </a>
   </div>
 </section>
 </template>
@@ -37,20 +44,58 @@ export default {
 
 <style scoped lang="scss">
 .section-live {
-    background-image: linear-gradient($color-black, $color-blue-1);
+    background-image: linear-gradient($color-black, $color-secondary);
     padding: 5rem;
-    min-height: 100vh;
+
     position: relative;
 
     @include respond(tab-lan) {
-      height: auto;
+        height: auto;
     }
 
     .content {
 
+        .button {
+            color: $color-white;
+            padding: 1rem 1.5rem;
+            width: 20rem;
+            background-color: $color-button-red;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+              transform: translateY(-5%);
+            }
+
+            &:hover > .icon {
+              margin-left: 1.2rem;
+            }
+
+            .icon {
+              transition: all 0.1s ease-in-out;
+              margin-left: 1rem;
+            }
+        }
+
+        .heading-tertiary {
+            color: $color-white;
+            text-align: center;
+        }
+
         .heading-secondary {
             color: $color-white;
             text-align: center;
+        }
+
+        .description {
+          color: $color-white;
+          text-align: center;
+          width: 80%;
+          margin: 2rem auto;
         }
 
         .onair {
@@ -64,9 +109,9 @@ export default {
             position: relative;
 
             @include respond(phone) {
-              height: 4rem;
-              width: 4rem;
-              margin: 0rem 2rem 0.75rem 2rem;
+                height: 4rem;
+                width: 4rem;
+                margin: 0 2rem 0.75rem;
             }
 
             &::after {
@@ -83,8 +128,8 @@ export default {
                 @include absCenter;
 
                 @include respond(phone) {
-                  height: 5rem;
-                  width: 5rem;
+                    height: 5rem;
+                    width: 5rem;
                 }
 
             }

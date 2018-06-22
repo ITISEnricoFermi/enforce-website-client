@@ -30,7 +30,7 @@ export default {
 
     // Create the chart
     let chart = new SmoothieChart({
-      millisPerPixel: 40,
+      millisPerPixel: 50,
       labels: {
         fontSize: 25
       },
@@ -67,12 +67,13 @@ export default {
     height: 20rem;
     border-radius: 0.25rem;
     overflow: hidden;
-    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
 
     canvas {
         padding: 0;
-        width: 200%;
-        height: 200%;
+        width: 100%;
+        // width: 200%;
+        height: 100%;
+        border-radius: 0.25rem;
     }
 }
 </style>

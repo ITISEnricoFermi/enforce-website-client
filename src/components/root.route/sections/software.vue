@@ -14,7 +14,7 @@ export default {
 
 <style scoped lang="scss">
 .section-software {
-  background-image: linear-gradient(to left bottom, #071930, $color-blue-1);
+  background-image: linear-gradient(to left bottom, #071930, $color-secondary);
   padding: 10rem;
   height: 100vh;
   position: relative;
