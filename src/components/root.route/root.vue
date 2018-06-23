@@ -7,7 +7,7 @@
     <app-section-targets></app-section-targets>
     <!-- <app-section-software></app-section-software> -->
     <app-section-live></app-section-live>
-    <app-section-video></app-section-video>
+    <!-- <app-section-video></app-section-video> -->
     <app-footer></app-footer>
   <!-- </full-page> -->
 </main>

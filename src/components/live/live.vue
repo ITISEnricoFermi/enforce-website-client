@@ -94,7 +94,7 @@ export default {
         padding: 1.5vh;
 
         @include respond(tab-lan) {
-            display: block;
+            flex-direction: column;
         }
 
         & > * {

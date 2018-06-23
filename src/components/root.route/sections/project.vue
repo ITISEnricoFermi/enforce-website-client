@@ -1,7 +1,7 @@
 <template>
   <section class="section-project">
     <h1 class="heading-primary u-margin-bottom-big">Il nostro progetto</h1>
-    <p class="paragraph-big">
+    <p class="paragraph">
       La sonda sarà composta da un sistema di guida, un sistema di targeting e un computer di bordo con vari sensori collegati ad esso.
       Il CanSat sarà alimentato da una batteria Li-ion scelta in base ai requisiti di consumo del dispositivo.
       L’assetto finale verrà definito al termine della fase di sperimentazione.
@@ -31,7 +31,11 @@ export default {
   }
 
   .heading-primary {
-    animation: moveInLeft 0.2s ease-in-out;
+      color: $color-grey-1;
+  }
+
+  .paragraph {
+    width: 50%;
   }
 
 }

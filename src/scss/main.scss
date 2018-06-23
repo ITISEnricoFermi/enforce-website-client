@@ -6,7 +6,8 @@
 // Base
 @import "base/animations";
 @import "base/base";
-@import "base/typography";
+@import "base/typography0";
 @import "base/utilities";
 
-// Components
+// Layout
+@import "layout/grid.scss";

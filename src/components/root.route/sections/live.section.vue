@@ -4,10 +4,9 @@
     <!-- <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1> -->
     <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown>
     <app-live v-else></app-live> -->
-    <h2 class="heading-tertiary">Segui la diretta</h2>
-    <p class="description">Durante i lanci il CanSat effettua alcune misurazioni: temperatura, umidità, pressione, ecc.
-      <br/>I dati vengono inviati in tempo reale al nostro sito web e resi facilmente consultabili
-      grazie a grafici e rappresentazioni tridimensionali.</p>
+    <h2 class="heading-primary">Segui la diretta</h2>
+    <p class="paragraph">Durante i lanci il CanSat effettua alcune misurazioni: temperatura, umidità, pressione, ecc.
+      <br/>I dati vengono inviati in tempo reale al nostro sito web e resi facilmente consultabili grazie a grafici e rappresentazioni tridimensionali.</p>
     <a href="/live/" class="button">
       <span>Segui la diretta</span>
       <span class="icon"><i class="fas fa-arrow-right"></i></span>
@@ -55,6 +54,10 @@ export default {
 
     .content {
 
+        .heading-primary {
+            text-align: center;
+        }
+
         .button {
             color: $color-white;
             padding: 1rem 1.5rem;
@@ -65,19 +68,26 @@ export default {
             display: block;
             text-align: center;
             margin: 0 auto;
+            box-shadow: 0 0 2rem rgba($color-black,0.5);
             transition: all 0.1s ease-in-out;
 
             &:hover {
-              transform: translateY(-5%);
+                transform: translateY(-5%);
+                box-shadow: 0 0 3rem rgba($color-black,0.5);
             }
 
-            &:hover > .icon {
-              margin-left: 1.2rem;
-            }
+            // &:hover > .icon {
+            //   margin-left: 1.5rem;
+            // }
 
             .icon {
-              transition: all 0.1s ease-in-out;
-              margin-left: 1rem;
+                transition: all 0.1s ease-in-out;
+                margin-left: 1rem;
+            }
+
+            &:active {
+                transform: translateY(5%);
+                box-shadow: 0 0 2rem rgba($color-black,0.5);
             }
         }
 
@@ -91,11 +101,11 @@ export default {
             text-align: center;
         }
 
-        .description {
-          color: $color-white;
-          text-align: center;
-          width: 80%;
-          margin: 2rem auto;
+        .paragraph {
+            color: $color-white;
+            text-align: center;
+            width: 80%;
+            margin: 2rem auto;
         }
 
         .onair {
