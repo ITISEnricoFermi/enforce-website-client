@@ -7,34 +7,34 @@
           Il tuo browser non è supportato!
       </video>
   </div>
-  <h1 class="heading-primary u-margin-bottom-big">I nostri obiettivi</h1>
+  <h1 class="heading-primary u-margin-bottom-big">Our objectives</h1>
   <div class="targets">
     <div class="target">
       <i class="fas fa-tachometer-alt"></i>
       <h3 class="heading-tertiary u-margin-bottom-small">Mission Control Panel</h3>
       <p class="target__text">
-        Progettare un pannello di controllo mediante il quale sarà possibile analizzare in tempo reale tutte le rilevazioni telemetriche, mediante l’uso di grafici e rappresentazioni tridimensionali.
+        Design a control panel through witch will be able to analyze in real time all the data, using graphs and tridimensional representations.
       </p>
     </div>
     <div class="target">
       <i class="fas fa-chart-area"></i>
       <h3 class="heading-tertiary u-margin-bottom-small">Diretta web</h3>
       <p class="target__text">
-        Trasmettere in diretta e pubblicamente sul nostro sito web i dati inviati dalla sonda.
+        Broadcast live and publicly to our website all the data transmitted by the probe.
       </p>
     </div>
     <div class="target">
       <i class="fas fa-parachute-box"></i>
       <h3 class="heading-tertiary u-margin-bottom-small">Atterraggio autonomo</h3>
       <p class="target__text">
-        Realizzare un sistema di guida che permetta al CanSat di atterrare autonomamente in un punto prestabilito.
+        Create a guidance system that allow the CanSat to land automatically on a predetermined spot.
       </p>
     </div>
     <div class="target">
       <i class="fas fa-video"></i>
       <h3 class="heading-tertiary u-margin-bottom-small">Video della discesa</h3>
       <p class="target__text">
-        Catturare il video della discesa per mezzo di una telecamera montata a bordo della sonda.
+        Record a video of the descent using a camera mounted on the bottom of the probe.
       </p>
     </div>
   </div>

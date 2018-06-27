@@ -5,10 +5,13 @@
     <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown>
     <app-live v-else></app-live> -->
     <h2 class="heading-primary">Segui la diretta</h2>
-    <p class="paragraph">Durante i lanci il CanSat effettua alcune misurazioni: temperatura, umidità, pressione, ecc.
-      <br/>I dati vengono inviati in tempo reale al nostro sito web e resi facilmente consultabili grazie a grafici e rappresentazioni tridimensionali.</p>
+
+    <p class="paragraph">
+      During the descent, the CanSat will measure various data like: temperature, umidity, air pressure, ecc. <br/>
+      </br/> The data is sent in real time to our website and easily consulted using graphs and tridimensional representations.
+    </p>
     <a href="/live/" class="button">
-      <span>Segui la diretta</span>
+      <span>Join the stream</span>
       <span class="icon"><i class="fas fa-arrow-right"></i></span>
     </a>
   </div>
@@ -27,7 +30,7 @@ export default {
       countdown: true
     }
   },
-  created () {
+  created() {
     if (String(Date.now()) >= String(this.launch)) {
       this.countdown = false
     } else {
