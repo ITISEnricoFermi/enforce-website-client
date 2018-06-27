@@ -28,6 +28,7 @@ export default {
 
     div:first-child {
         height: 100%;
+        width: 100%;
     }
 
     &__text-box {
