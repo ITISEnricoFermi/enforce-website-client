@@ -4,23 +4,27 @@
     <!-- <h1 class="heading-secondary u-margin-bottom-big"><span class="onair"></span>Diretta</h1> -->
     <!-- <app-countdown :end="launch" v-if="countdown"></app-countdown>
     <app-live v-else></app-live> -->
-    <h2 class="heading-primary">Segui la diretta</h2>
+    <h2 class="heading-primary">Join the stream</h2>
 
     <p class="paragraph">
-      During the descent, the CanSat will measure various data like: temperature, umidity, air pressure, ecc. <br/>
-      </br/> The data is sent in real time to our website and easily consulted using graphs and tridimensional representations.
+      During the descent, the CanSat will measure data from different sensors (for example temperature, humidity, air pressure, etc.). <br/> The data will be transmitted in real time to our website and easily consulted using graphs and tridimensional
+      representations.
     </p>
     <a href="/live/" class="button">
       <span>Join the stream</span>
       <span class="icon"><i class="fas fa-arrow-right"></i></span>
     </a>
   </div>
+
+  <app-calendar></app-calendar>
 </section>
 </template>
 
 <script>
 import Countdown from '@/components/countdown/countdown'
 import Live from '@/components/live/live'
+
+import Calendar from './calendar'
 
 export default {
   name: 'live',
@@ -30,7 +34,7 @@ export default {
       countdown: true
     }
   },
-  created() {
+  created () {
     if (String(Date.now()) >= String(this.launch)) {
       this.countdown = false
     } else {
@@ -39,7 +43,8 @@ export default {
   },
   components: {
     appCountdown: Countdown,
-    appLive: Live
+    appLive: Live,
+    appCalendar: Calendar
   }
 }
 </script>

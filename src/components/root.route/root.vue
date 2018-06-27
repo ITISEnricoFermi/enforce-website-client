@@ -1,9 +1,10 @@
 <template>
 <main>
   <!-- <full-page :options="options"> -->
-    <!-- <app-header></app-header> -->
+    <app-header></app-header>
     <!-- <app-section-team></app-section-team> -->
     <app-section-project></app-section-project>
+    <!-- <app-section-team></app-section-team> -->
     <app-section-targets></app-section-targets>
     <!-- <app-section-software></app-section-software> -->
     <app-section-live></app-section-live>
@@ -16,12 +17,12 @@
 <script>
 import Header from './header'
 import Footer from './footer'
-import SectionTeam from './sections/team'
-import SectionProject from './sections/project'
-import SectionTargets from './sections/targets'
-import SectionSoftware from './sections/software'
+import SectionTeam from './sections/team.section'
+import SectionProject from './sections/project.section'
+import SectionTargets from './sections/targets.section'
+import SectionSoftware from './sections/software.section'
 import SectionLive from './sections/live.section'
-import SectionVideo from './sections/video'
+import SectionVideo from './sections/video.section'
 
 // import {
 //   FullPage
