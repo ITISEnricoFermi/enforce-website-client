@@ -39,7 +39,13 @@ export default {
         }
 
         .heading-primary {
+            text-align: center;
+
             color: $color-grey-1;
+
+            @include respond(tab-lan) {
+              text-align: left;
+            }
         }
 
         .paragraph {
