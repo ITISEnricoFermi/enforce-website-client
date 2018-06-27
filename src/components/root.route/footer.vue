@@ -68,6 +68,7 @@ export default {}
             width: 50%;
             @include respond(tab-lan) {
                 margin-bottom: 2rem;
+                width: 100%;
             }
 
             .body {
@@ -81,6 +82,10 @@ export default {}
         .right {
             width: 50%;
             text-align: right;
+
+            @include respond(tab-lan) {
+                width: 100%;
+            }
 
             .body {
               width: 100%;

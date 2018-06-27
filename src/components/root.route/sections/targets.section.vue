@@ -76,10 +76,6 @@ export default {
 
     }
 
-    .heading-primary {
-        text-align: center;
-    }
-
     .targets {
         position: absolute;
         @include absCenter;
