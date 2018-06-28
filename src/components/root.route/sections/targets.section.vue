@@ -33,7 +33,7 @@
       </div>
       <div class="target">
         <i class="fas fa-video"></i>
-        <h3 class="heading-tertiary u-margin-bottom-small">Video of landing</h3>
+        <h3 class="heading-tertiary u-margin-bottom-small">Landing video</h3>
         <p class="target__text">
           Video recording of the descent using a camera mounted on the bottom of the probe.
         </p>
