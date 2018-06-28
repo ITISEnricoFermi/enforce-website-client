@@ -1,7 +1,7 @@
 <template>
 <main>
   <!-- <full-page :options="options"> -->
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
     <!-- <app-section-team></app-section-team> -->
     <app-section-project></app-section-project>
     <!-- <app-section-team></app-section-team> -->

@@ -26,14 +26,14 @@
       </div>
       <div class="target">
         <i class="fas fa-parachute-box"></i>
-        <h3 class="heading-tertiary u-margin-bottom-small">Atterraggio autonomo</h3>
+        <h3 class="heading-tertiary u-margin-bottom-small">Autonomous landing</h3>
         <p class="target__text">
           Guidance system and autonomous landing on predetermined coordinates.
         </p>
       </div>
       <div class="target">
         <i class="fas fa-video"></i>
-        <h3 class="heading-tertiary u-margin-bottom-small">Video della discesa</h3>
+        <h3 class="heading-tertiary u-margin-bottom-small">Video of landing</h3>
         <p class="target__text">
           Video recording of the descent using a camera mounted on the bottom of the probe.
         </p>
