@@ -32,7 +32,7 @@ export default {
     let chart = new SmoothieChart({
       millisPerPixel: 50,
       labels: {
-        fontSize: 25
+        fontSize: 16
       },
       grid: {
         borderVisible: false
@@ -40,8 +40,8 @@ export default {
       tooltip: true,
       // timestampFormatter: SmoothieChart.timeFormatter,
       responsive: true
-      // maxValue: this.max,
-      // minValue: this.min
+      maxValue: this.max,
+      minValue: this.min
     })
 
     chart.addTimeSeries(this.timeSerie, {

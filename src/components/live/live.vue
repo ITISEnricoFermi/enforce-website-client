@@ -114,6 +114,10 @@ export default {
 
         & > * {
 
+          @include respond(tab-lan) {
+              min-height: 20rem;
+          }
+
           &:nth-child(1) {
             grid-area: temperature;
           }
