@@ -20,21 +20,31 @@ export default {
 </script>
 
 <style lang="scss">
-.header {
-    width: 100%;
-    height: 8rem;
-    background-color: $color-primary;
-    display: flex;
-    align-content: space-between;
+.main {
+  width: 100%;
+  height: 100vh;
 
-    .logo {
+  .header {
+      width: 100%;
+      height: 8rem;
+      background-color: $color-primary;
+      display: flex;
+      align-content: space-between;
 
-        img {
-            height: 4rem;
-            margin: 2rem;
-        }
+      .logo {
 
-    }
+          img {
+              height: 4rem;
+              margin: 2rem;
+          }
+
+      }
+
+  }
+
+  .live {
+    height: calc(100% - 8rem);
+  }
 
 }
 </style>

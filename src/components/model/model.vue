@@ -32,5 +32,11 @@ export default {
 .model {
   height: 100%;
   width: 100%;
+  border-radius: 0.25rem;
+
+  canvas {
+      border-radius: 0.25rem;
+  }
+
 }
 </style>

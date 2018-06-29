@@ -63,8 +63,8 @@ export default {
 <style scoped lang="scss">
 .plotter {
     width: 100%;
+    height: 100%;
     background-color: $color-black;
-    height: 20rem;
     border-radius: 0.25rem;
     overflow: hidden;
 
