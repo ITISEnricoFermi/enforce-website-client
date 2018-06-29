@@ -39,7 +39,7 @@ export default {
       },
       tooltip: true,
       // timestampFormatter: SmoothieChart.timeFormatter,
-      responsive: true
+      responsive: true,
       maxValue: this.max,
       minValue: this.min
     })
