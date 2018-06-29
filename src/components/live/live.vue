@@ -2,7 +2,7 @@
 <div class="live">
   <div class="content">
     <div class="plotter-box">
-      <app-plotter data="temperature" :color="green" :max="'50'" :min="'-10'"></app-plotter>
+      <app-plotter data="temperature" :color="green" :max="'100'" :min="'0'"></app-plotter>
       <div class="values">
         <p class="tag">Temperature</p>
         <p class="value">{{ data.temperature + '°' }}</p>
