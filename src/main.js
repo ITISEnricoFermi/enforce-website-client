@@ -7,7 +7,7 @@ import VueParticles from 'vue-particles'
 import App from './App'
 import router from './router'
 
-export const SocketInstance = socketio('http://185.25.207.165:4000')
+export const SocketInstance = socketio('http://185.25.207.165:4000', {secure: true})
 
 export const eventBus = new Vue({
   methods: {
@@ -34,9 +34,9 @@ Vue.use(VueSocketIO, SocketInstance)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
+new Vue({el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
-})
+  components: {
+    App
+  },
+  template: '<App/>'})

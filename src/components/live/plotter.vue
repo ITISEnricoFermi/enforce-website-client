@@ -71,7 +71,6 @@ export default {
     canvas {
         padding: 0;
         width: 100%;
-        // width: 200%;
         height: 100%;
         border-radius: 0.25rem;
     }
