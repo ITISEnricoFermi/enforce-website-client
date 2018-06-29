@@ -7,7 +7,7 @@ import VueParticles from 'vue-particles'
 import App from './App'
 import router from './router'
 
-export const SocketInstance = socketio('http://185.25.207.165:4000', {secure: true})
+export const SocketInstance = socketio(window.location.hostname + ':4000', {secure: true})
 
 export const eventBus = new Vue({
   methods: {
