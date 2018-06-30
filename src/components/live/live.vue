@@ -84,6 +84,7 @@ export default {
     position (pos) {
       eventBus.position(pos)
       this.data.position = pos
+      this.data.altitude = pos.altitude
     }
   },
   components: {
@@ -110,6 +111,7 @@ export default {
 
         @include respond(tab-lan) {
             display: block;
+
         }
 
         & > * {
@@ -158,6 +160,10 @@ export default {
 
             .plotter {
               height: calc(100% - 4rem);
+
+              @include respond(tab-lan) {
+                  min-height: 20rem;
+              }
             }
 
             .values {
