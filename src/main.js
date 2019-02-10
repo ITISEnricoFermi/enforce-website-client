@@ -1,13 +1,14 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import './registerServiceWorker'
+
 import socketio from 'socket.io-client'
 import VueSocketIO from 'vue-socket.io'
 import VueParticles from 'vue-particles'
-import App from './App'
-import router from './router'
 
-export const SocketInstance = socketio('/', {secure: true, rejectUnauthorized: false, transports: ['websocket', 'flashsocket', 'polling']})
+Vue.config.productionTip = false
 
 export const eventBus = new Vue({
   methods: {
@@ -33,13 +34,18 @@ export const eventBus = new Vue({
 })
 
 Vue.use(VueParticles)
-Vue.use(VueSocketIO, SocketInstance)
-Vue.config.productionTip = false
 
-/* eslint-disable no-new */
-new Vue({el: '#app',
+Vue.use(new VueSocketIO({
+  debug: false,
+  connection: socketio('/', {
+    secure: true,
+    rejectUnauthorized: false,
+    transports: ['websocket', 'flashsocket', 'polling']
+  })
+}))
+
+new Vue({
   router,
-  components: {
-    App
-  },
-  template: '<App/>'})
+  store,
+  render: h => h(App)
+}).$mount('#app')

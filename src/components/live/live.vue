@@ -41,7 +41,7 @@ import {
   eventBus
 } from '@/main'
 
-import Values from './values.vue'
+// import Values from './values.vue'
 import Plotter from './plotter.vue'
 import Model from '@/components/model/model'
 
@@ -88,7 +88,7 @@ export default {
     }
   },
   components: {
-    appValues: Values,
+    // appValues: Values,
     appPlotter: Plotter,
     appModel: Model
   }
