@@ -3,11 +3,13 @@
     <div class="content">
       <div class="profile">
         <div class="profile__side profile__side--front">
-          <img src="profile/riccardo_sangiorgio.jpg" alt="Riccardo Sangiorgio" class="pic">
+          <img
+            src="profile/riccardo_sangiorgio.jpg"
+            alt="Riccardo Sangiorgio"
+            class="pic"
+          />
         </div>
-        <div class="profile__side profile__side--back">
-
-        </div>
+        <div class="profile__side profile__side--back"></div>
       </div>
       <div class="profile">
         <div class="profile__side profile__side--front">
@@ -21,11 +23,13 @@
 
       <div class="profile">
         <div class="profile__side profile__side--front">
-          <img src="profile/hristo_kamenov.jpg" alt="Hristo Kamenov" class="pic">
+          <img
+            src="profile/hristo_kamenov.jpg"
+            alt="Hristo Kamenov"
+            class="pic"
+          />
         </div>
-        <div class="profile__side profile__side--back">
-
-        </div>
+        <div class="profile__side profile__side--back"></div>
       </div>
     </div>
   </section>
@@ -33,16 +37,13 @@
 
 <script>
 export default {
-  name: 'team'
-}
+  name: "team",
+};
 </script>
 
 <style scoped lang="scss">
-
 .section-team {
-
   .content {
-
     // display: flex;
     // background-color: green;
     // justify-content: center;
@@ -84,35 +85,29 @@ export default {
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front {
-            background-color: red;
+          background-color: red;
           .pic {
             width: 100%;
             height: 100%;
           }
-
         }
 
         &--back {
           background-color: green;
           transform: rotateY(180deg);
-
         }
-
       }
 
-      &:hover &__side--front{
+      &:hover &__side--front {
         transform: rotateY(-180deg);
         background-color: green;
       }
 
-      &:hover &__side--back{
+      &:hover &__side--back {
         transform: rotateY(0deg);
         background-color: yellow;
       }
-
     }
-
   }
-
 }
 </style>

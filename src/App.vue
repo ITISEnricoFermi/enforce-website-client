@@ -1,25 +1,24 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'app',
+  name: "app",
   sockets: {
-    connect () {
-      console.log('Connected.')
+    connect() {
+      console.log("Connected.");
     },
-    disconnect () {
-      console.log('Connection lost.')
+    disconnect() {
+      console.log("Connection lost.");
     },
-    data (data) {
-      console.log(data)
-    }
-  }
-}
+    data(data) {
+      console.log(data);
+    },
+  },
+};
 </script>
 
 <style lang="scss">

@@ -2,7 +2,12 @@
   <section class="section-video">
     <div class="content">
       <div class="video">
-        <iframe src="https://www.youtube.com/embed/hrHDRaYYsE8?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/hrHDRaYYsE8?showinfo=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </section>
@@ -10,11 +15,11 @@
 
 <script>
 export default {
-  mounted () {
-    let video = document.querySelector('.video')
-    video.style.height = (video.offsetWidth * 9) / 16 + 'px'
-  }
-}
+  mounted() {
+    let video = document.querySelector(".video");
+    video.style.height = (video.offsetWidth * 9) / 16 + "px";
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -46,7 +51,6 @@ export default {
         width: 100%;
       }
     }
-
   }
 }
 </style>

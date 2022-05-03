@@ -1,15 +1,13 @@
 <template>
   <section class="section-software">
-    <div class="slider">
-
-    </div>
+    <div class="slider"></div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'software'
-}
+  name: "software",
+};
 </script>
 
 <style scoped lang="scss">
@@ -33,7 +31,5 @@ export default {
     border-radius: 3rem;
     box-shadow: 0 0rem 2rem rgba($color-black, 0.65);
   }
-
 }
-
 </style>
