@@ -1,9 +1,9 @@
 <template>
   <div class="main">
     <header class="header">
-      <a href="/" class="logo">
-        <img src="/logo/enforce.svg" />
-      </a>
+      <router-link to="/" class="logo">
+        <img src="@/assets/enforce.svg" />
+      </router-link>
     </header>
     <app-live></app-live>
   </div>

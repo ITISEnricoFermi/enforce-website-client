@@ -12,10 +12,10 @@
         The data will be transmitted in real time to our website and easily
         consulted using graphs and tridimensional representations.
       </p>
-      <a href="live/" class="button">
+      <router-link to="/live" class="button">
         <span>Join the stream</span>
-        <span class="icon"><i class="fas fa-arrow-right"></i></span>
-      </a>
+        <span class="icon"><i class="fas fa-arrow-right"></i></span
+      ></router-link>
     </div>
 
     <app-calendar></app-calendar>
