@@ -12,7 +12,7 @@
         The data will be transmitted in real time to our website and easily
         consulted using graphs and tridimensional representations.
       </p>
-      <a href="/live/" class="button">
+      <a href="live/" class="button">
         <span>Join the stream</span>
         <span class="icon"><i class="fas fa-arrow-right"></i></span>
       </a>

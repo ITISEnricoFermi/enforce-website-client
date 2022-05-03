@@ -1,7 +1,5 @@
-import socketio from "socket.io-client";
 import Vue from "vue";
 import VueParticles from "vue-particles";
-import VueSocketIO from "vue-socket.io";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
@@ -34,16 +32,19 @@ export const eventBus = new Vue({
 
 Vue.use(VueParticles);
 
-Vue.use(
-  new VueSocketIO({
-    debug: false,
-    connection: socketio("/", {
-      secure: true,
-      rejectUnauthorized: false,
-      transports: ["websocket", "flashsocket", "polling"],
-    }),
-  })
-);
+/**
+ * Disattivato per sito statico.
+ */
+// Vue.use(
+//   new VueSocketIO({
+//     debug: false,
+//     connection: socketio("/", {
+//       secure: true,
+//       rejectUnauthorized: false,
+//       transports: ["websocket", "flashsocket", "polling"],
+//     }),
+//   })
+// );
 
 new Vue({
   router,
